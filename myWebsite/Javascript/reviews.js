@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
   submitButton.addEventListener("click", function (event) {
     //listen to the submit button
     event.preventDefault();
-
-    const nameInput = document.getElementById("name").value; //create name variable and save input to it
-    const reviewInput = document.getElementById("review").value; //create review variable and save input to it.
+    //create name variable and save input.
+    const nameInput = document.getElementById("name").value;
+    //create review variable and save input.
+    const reviewInput = document.getElementById("review").value;
 
     // Create a new testimonial element
     const newTestimonial = document.createElement("div");
