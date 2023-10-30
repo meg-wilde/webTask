@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ninewells Holiday Rentals</title>
+    <!--link to bootstrap style sheet first -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--link to my style sheet second -->
+    <link href="../stylesheets/myStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!--Header to hold the page title-->
+      <h1 id="main">Ninewells Holiday Lettings</h1>
+      <h2 id="sub-main">Relaxing woodland retreats</h2>
+    </header>
+    <div id="nav">
+      <!--section for the nav bar-->
+      <nav>
+        <ul>
+          <!--list of elements to put into the nav-->
+          <li><a href="#all-lodges">Our Lodges</a></li>
+          <li><a href="N-location.html">Location</a></li>
+          <li><a href="N-pricing.html">Pricing</a></li>
+          <li><a href="N-things-to-do.html">Things to do</a></li>
+          <li><a href="N-reviews.html">Reviews</a></li>
+          <li><a href="#contact-form">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section id="top">
+      <!--section for the introduction-->
+      <div class="introduction">
+        <h2 class="bodyh2">About Ninewells</h2>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <!--add 2 empty columns-->
+          <div class="col-md-8">
+            <!--add 8 column section to add content to-->
+            <img id="topimg" src="../imagery/hottub.jpeg" alt="hottub" />
+            <p>
+              Set amonst 8 acres of woodland this small countryside retreat lets
+              you unwind and relax in the tranquility of nature. Each of our
+              lodges offers a unique experiences with views across the woods and
+              accompanying countryside. <br />
+              Our location feels very rural and isolates but benefits from the
+              villages of West Linton with golf course, pubs, restaurants and
+              shop, only 4 miles way, the larger town of Biggar only 6 miles
+              away and Peebles 12 miles. The journey to the capital Edinburgh is
+              only a short 40 minute drive by car or there is a bus service that
+              stops only a short walk from the site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--create a div to hold all the lodges -->
+    <div id="all-lodges">
+      <h2 class="bodyh2">Our Lodges</h2>
+      <!--create a div for each lodge with name, image, description, cost and book button-->
+      <div class="lodge">
+        <!--class to group all the lodges-->
+        <div class="row">
+          <!--add each lodge to a row-->
+          <div class="col-md-6">
+            <!--split the row into 2 6 column sections-->
+            <!--first section-->
+            <div class="lodge1image">
+              <img
+                class="lodge-image"
+                src="../imagery/ducks-nest.jpeg"
+                alt="holiday lodge, the Ducks Nest"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--second section-->
+            <div class="lodge1info">
+              <!--class to group all the lodge text-->
+              <div class="lodge-name">The Ducks Nest</div>
+              <!--name-->
+              <div class="lodge-description">
+                Our original lodge close to our pond. The Duck's Next comes with
+                views of the wildlife and birdlife that come here as well as our
+                neighouring farms cows and sheep.<br />
+                Max. 2 adults
+              </div>
+              <!--description-->
+              <div class="lodge-cost">from £95 per night</div>
+              <!--cost-->
+              <!--Book button-->
+              <div class="book-button">
+                <button type="button">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--second lodge-->
+      <div class="lodge">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="lodge2image">
+              <img
+                class="lodge-image"
+                src="../imagery/deer-path.webp"
+                alt="holiday lodge, the Deer Path"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lodge2info">
+              <div class="lodge-name">The Deer Path</div>
+              <div class="lodge-description">
+                Nestled amongst the woodland trees, The Deer Path allows you to
+                relax and unwind in the surroundings of the woodland creatures
+                and trees. The perfect relaxing getaway location.<br />
+                Max. 2 adults
+              </div>
+              <div class="lodge-cost">from £85 per night</div>
+              <!--Buy button-->
+              <div class="book-button">
+                <button type="button">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--third lodge-->
+      <div class="lodge">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="lodge3image">
+              <img
+                class="lodge-image"
+                src="../imagery/secret-cabin.jpeg"
+                alt="holiday lodge, the Secret Cabin"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lodge3info">
+              <div class="lodge-name">The Secret Cabin</div>
+              <div class="lodge-description">
+                The Secret Cabin is our newest lodge which offers space for up
+                to 4 adults to cosy up around the log burning stove or relax in
+                the privacy of their own hot tub. The Secret Cabin is situatied
+                in its own little garden allowing your the ultimae privacy for
+                your retreat.<br />
+                Max. 4 adults
+              </div>
+              <div class="lodge-cost">from £135 per night</div>
+              <!--Buy button-->
+              <div class="book-button">
+                <button type="button">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--fourth lodge-->
+      <div class="lodge">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="lodge4image">
+              <img
+                class="lodge-image"
+                src="../imagery/treehouse.jpeg"
+                alt="holiday lodge, the treehouse"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="lodge1info">
+              <div class="lodge-name">The Treehouse</div>
+              <div class="lodge-description">
+                If you are looking for the ultimate woodland escape then the
+                Treehouse is the perfect option for you. Sitting up in the
+                canopies of the treetops you can watch the birds and get a great
+                view across the rest of the woodland.<br />
+                Max. 2 adults
+              </div>
+              <div class="lodge-cost">from £110 per night</div>
+              <!--Book button-->
+              <div class="book-button">
+                <button type="button">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section to hold the end form-->
+    <section id="bottom">
+      <div class="row">
+        <!--create a row to hold the columns-->
+        <div class="col-md-3"></div>
+        <!--create 3 blank columns-->
+        <div class="col-md-6">
+          <!--6 columns to hold the content-->
+          <!--contact form-->
+          <div id="contact-form">
+            <h3>Need help?</h3>
+            <p>
+              Fill in your details and we'll get back to you as soon as we can.
+            </p>
+            <form>
+              <!--contact form to add first name, last name email and submit button (button not working)-->
+              <label for="firstname">First name:</label><br />
+              <input type="text" id="firstname" name="firstname" /><br />
+
+              <label for="lastname">Last name:</label><br />
+              <input type="text" id="lastname" name="lastname" /><br />
+
+              <label for="email">E-mail address:</label><br />
+              <input type="text" id="email" name="email" /><br />
+
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message" rows="4"></textarea><br />
+
+              <!--radio buttons to opt into newsletter-->
+              <label class="radio-label"
+                >Can we use your email address to add you to our
+                newsletter?</label
+              >
+              <input
+                type="radio"
+                name="option"
+                value="yes"
+                id="option1"
+                class="radio-input"
+              />
+              <label for="option1">Yes</label>
+              <input
+                type="radio"
+                name="option"
+                value="no"
+                id="option2"
+                class="radio-input"
+              />
+              <label for="option2">No</label>
+
+              <div id="submit">
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer section with info-->
+    <footer>
+      <p>Ninewells, Dolphinton. Est. 2023</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,314 @@
+/* Style for the header banner where the main title is*/
+header {
+  background-color: rgb(88, 111, 107);
+  text-align: center;
+  height: 25vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Text styling only for the top of page headers*/
+#main,
+#sub-main {
+  color: rgb(207, 192, 189);
+  text-align: center;
+  font-weight: lighter;
+}
+/* Text size for H1*/
+h1 {
+  font-size: 3rem;
+}
+
+/* Text size, style, alignment, color for H2*/
+h2 {
+  color: rgb(127, 145, 131);
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+/* Text size, style, color for H3*/
+h3 {
+  color: rgb(127, 145, 131);
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Text styling only for the headers inside the body*/
+.bodyh2 {
+  margin-left: 9vw;
+  padding-top: 20px;
+}
+
+/* Text color for body*/
+body {
+  background-color: rgb(221, 213, 208);
+}
+
+/*Standard paragraph color and family. Also all to unordered lists*/
+p,
+ul {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(64, 83, 80);
+}
+
+/* Nav bar background color, height and font alignment*/
+#nav {
+  background-color: rgb(127, 145, 131);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  text-align: center;
+  height: 7vh;
+}
+
+/* Nav bar elements positioning*/
+#nav li {
+  margin-top: 1.5vh;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* Nav bar text colour*/
+#nav li a {
+  color: rgb(221, 213, 208);
+  text-decoration: none;
+}
+
+/* Image styling and margins*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+/* Image size for lodge/activity images*/
+.lodge-image,
+.activity-image {
+  width: 30vw;
+  height: 40vh;
+}
+
+/* Image size for saved activity images*/
+.item-image {
+  width: 20vw;
+  height: 30vh;
+}
+
+/* Image size for the top image*/
+#topimg {
+  width: 40vw;
+  height: auto;
+}
+
+/*Text alignment and colour for Lodge/activity info*/
+.lodge-name,
+.lodge-description,
+.lodge-cost,
+.activity-name,
+.activity-description,
+.activity-cost {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(64, 83, 80);
+}
+
+/*Font size and colour change for name*/
+.lodge-name,
+.activity-name {
+  font-size: 1.5rem;
+  color: rgb(127, 145, 131);
+}
+
+/*Make the description italic */
+.lodge-description,
+.activity-description {
+  font-style: italic;
+}
+/*Make the cost bold */
+.lodge-cost,
+.activity-cost {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*Align the book button to the right*/
+.book-button,
+.save-button {
+  text-align: right;
+}
+
+/*Styles for all buttons. Font, size, radius, colours.*/
+button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 4px 2px;
+  background-color: rgb(207, 192, 189);
+  border-color: rgb(221, 213, 208);
+  color: rgb(64, 83, 80);
+}
+
+/*Change the background colour for the bottom element and footer*/
+#bottom,
+footer {
+  background-color: rgb(184, 184, 170);
+}
+
+/*Text style within footer. Small size, colour, alignment.*/
+footer {
+  font-size: 1rem;
+  color: rgb(184, 184, 170);
+  text-align: center;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*Text style within saved items.*/
+#activity-list {
+  color: rgb(127, 145, 131);
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/*Align the content within each row element to the cenre with margins*/
+.row {
+  margin-top: 20px;
+  margin-right: 30px;
+  align-items: center;
+}
+
+/*Increase the line spacing in the top section to space out the text more*/
+#top {
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*Create aligment and padding for the contact form*/
+#contact-form {
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 2vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(88, 111, 107);
+}
+
+/*Align the submit button right*/
+#submit {
+  text-align: right;
+}
+
+/*create a white box for the input fields*/
+input[type="text"],
+#message,
+#review {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/*Styling for table in the pricing page*/
+table {
+  width: 50%;
+  margin: auto;
+  border: 2px solid rgb(88, 111, 107);
+  text-align: center;
+  color: rgb(88, 111, 107);
+}
+
+/*Add small borders*/
+tr td {
+  border: 1px solid rgb(88, 111, 107);
+}
+
+/*Add color for headers*/
+th {
+  color: rgb(64, 83, 80);
+}
+
+/*Add padding in pricing page content*/
+.pricing,
+#seasons {
+  padding: 20px;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/*Create boxes to have each testimonial inside.*/
+.testimonial {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(220, 220, 220);
+}
+
+/*Change size and add italic style to testimonial*/
+.testimonial p {
+  font-style: italic;
+  font-size: large;
+}
+
+/*Make author bold*/
+.testimonial .author {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*Style the active liked button*/
+.like-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* for smaller screens return everything into one column*/
+@media (max-width: 767px) {
+  .lodge,
+  .activity {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #topimg,
+  .lodge-image,
+  .activity-image {
+    display: block;
+    width: 90vw;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+  }
+
+  .item-image {
+    display: block;
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .book-button,
+  .save-button {
+    text-align: center;
+  }
+
+  h3,
+  p {
+    margin-left: 3vw;
+  }
+}

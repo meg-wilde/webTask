@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ninewells Holiday Rentals</title>
+    <!--link to bootstrap style sheet first -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--link to my style sheet second -->
+    <link href="../stylesheets/myStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!--Header to hold the page title-->
+      <h1 id="main">Ninewells Holiday Lettings</h1>
+      <h2 id="sub-main">Relaxing woodland retreats</h2>
+    </header>
+    <div id="nav">
+      <!--section for the nav bar-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="N-my-activites.html">My Things To Do</a></li>
+          <!--Add only the home link to the nav bar-->
+        </ul>
+      </nav>
+    </div>
+    <section id="top">
+      <!--section for the introduction-->
+      <div class="thingsToDo">
+        <h2 class="bodyh2">Things to do</h2>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <!--add 2 empty columns-->
+          <div class="col-md-8">
+            <!--add 8 column section to add content to-->
+            <p>
+              Our location offers you the change to unwind and escape from the
+              hustle and bustle of everyday life. However, if you are looking
+              for some fun activities to visit in the area, here are some of our
+              favourites.<br />
+              If you want to save some to a shortlist, click on save.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--create a div to hold all the activities -->
+    <div id="all-activities">
+      <h2 class="bodyh2">Activities</h2>
+      <!--create a div for each activity with name, image, description, cost and save button-->
+      <div class="activity">
+        <!--class to group all the activities-->
+        <div class="row">
+          <!--add each lodge to a row-->
+          <div class="col-md-6">
+            <!--split the row into 2 6 column sections-->
+            <!--first section-->
+            <div class="activity1image">
+              <img
+                class="activity-image"
+                src="../imagery/edinburgh-castle.webp"
+                alt="Edinburgh Castle"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--second section for details-->
+            <div class="activity1info">
+              <!--class to group all the activity text-->
+              <div class="activity-name">Edinburgh Castle</div>
+              <!--name-->
+              <div class="activity-description">
+                Edinburgh Castle is one of the most exciting historic sites in
+                Western Europe. Set in the heart of Scotland's dynamic capital
+                city, it is sure to capture your imagination. The scenery will
+                take your breath away. Only 45 minute drive from Ninewells.
+              </div>
+              <!--description-->
+              <div class="activity-cost">from £19.50 per adult</div>
+              <!--cost-->
+              <!--Book button-->
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--second activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity2image">
+              <img
+                class="activity-image"
+                src="../imagery/yacht-britannia.jpeg"
+                alt="Royal Yacht Britannia"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity2info">
+              <div class="activity-name">Royal Yacht Britannia</div>
+              <div class="activity-description">
+                Explore each of the five decks of The Royal Yacht Britannia and
+                discover what life was like during Royal service on board Queen
+                Elizabeth II's former floating palace. A great day out for all
+                the family. Only 45 minute drive from Ninewells.
+              </div>
+              <div class="activity-cost">from £18.50 per adult</div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--third activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity3image">
+              <img
+                class="activity-image"
+                src="../imagery/forth-bridge.jpeg"
+                alt="Queensferry Crossing"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity3info">
+              <div class="activity-name">Queensferry crossing</div>
+              <div class="activity-description">
+                The 1.7 miles (2.7km) structure is the longest 3-tower,
+                cable-stayed bridge in the world. The new crossing formed the
+                centrepiece of a major upgrade to the cross-Forth links in
+                Scotland and cost over £1.3 billion. Its a great place to take
+                pictures and see the view of the Firth of Forth. Only 50 minute
+                drive from Ninewells.
+              </div>
+              <div class="activity-cost">free</div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--fourth activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity4image">
+              <img
+                class="activity-image"
+                src="../imagery/glentress.jpeg"
+                alt="Glentress mountain biking"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity4info">
+              <div class="activity-name">Glentress mountain biking</div>
+              <div class="activity-description">
+                Glentress is rightly celebrated for some of the best mountain
+                bike trails in the country, but that's just the beginning of the
+                story. Visit for walking, tree-top adventure and magnificent
+                views of the Tweed Valley. Explore our Wildlife Room where you
+                can watch our observation beehive, view our live osprey cams and
+                learn more about other wildlife you may encounter in Glentress
+                Forest. There's great coffee, food and cake in our buzzing café
+                too Only 30 minute drive from Ninewells.
+              </div>
+              <div class="activity-cost">
+                parking from £3, bike hire extra, available on site.
+              </div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--fifth activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity5image">
+              <img
+                class="activity-image"
+                src="../imagery/chocolate.jpeg"
+                alt="Chocolate making"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity5info">
+              <div class="activity-name">Chocolate making at Cocoa Black</div>
+              <div class="activity-description">
+                Learn how to make your own handmade chocolate truffles at The
+                Chocolate & Pastry School in Peebles, only 20 minutes away.
+                Developed by UK World Chocolate Master Ruth Hinks, Make Your Own
+                Chocolate Truffles is a popular introductory class for those
+                with little or no experience of working with chocolate.
+                Participants take home 30-40 beautifully presented chocolate
+                truffles.
+              </div>
+              <div class="activity-cost">from £70 per person.</div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--sixth activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity6image">
+              <img
+                class="activity-image"
+                src="../imagery/pentland-hills.jpeg"
+                alt="pentland hills"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity6info">
+              <div class="activity-name">Hike in the Pentland Hills</div>
+              <div class="activity-description">
+                The Regional Park has a stunning range of medium-sized hills
+                stretching from the City of Edinburgh bypass down to Carlops.
+                Three local authorities cover the Park, which is a mixture of
+                publicly-owned land (such as Hillend, Bonaly, and Harlaw), and
+                private land used for farming and sport shooting. Reservoirs dot
+                the landscape, providing homes for many birds and mammals. Park
+                to start your hike near Carlops, only 15 minutes away.
+              </div>
+              <div class="activity-cost">free</div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--seventh activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity7image">
+              <img
+                class="activity-image"
+                src="../imagery/fishing.jpeg"
+                alt="fishing"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity7info">
+              <div class="activity-name">Fish on the River Tweed</div>
+              <div class="activity-description">
+                Tweed is the second longest river in Scotland and takes great
+                pride in the fact that it produces more salmon caught to the fly
+                than any other river in Britain. The river is famous for its
+                salmon run and attracts anglers from across the globe to come
+                fishing on its banks. The closest locations are only 10 minutes
+                from Ninewells.
+              </div>
+              <div class="activity-cost">
+                from £50 depending on fishery location
+              </div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--eighth activity-->
+      <div class="activity">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="activity8image">
+              <img
+                class="activity-image"
+                src="../imagery/shopping.jpeg"
+                alt="shopping"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--details section-->
+            <div class="activity7info">
+              <div class="activity-name">Retail Therapy in Edinburgh</div>
+              <div class="activity-description">
+                Edinburgh city centre plays host to the biggest global brands as
+                well as local boutiques. For rainy days the newly built St James
+                Quarter offers a stunning gallery style shopping centre with a
+                mix of designer and high-street brands as well as some world
+                class dining experiences.
+              </div>
+              <div class="activity-cost">free</div>
+              <div class="save-button">
+                <!--Like button-->
+                <button
+                  type="button"
+                  onclick="likeActivity(this)"
+                  class="like-button"
+                >
+                  👍
+                </button>
+                <button
+                  type="button"
+                  onclick="saveToMyThings(this.closest('.activity'))"
+                >
+                  Save to My Things To Do
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section to hold the end form-->
+    <section id="bottom">
+      <div class="row">
+        <!--create a row to hold the columns-->
+        <div class="col-md-3"></div>
+        <!--create 3 blank columns-->
+        <div class="col-md-6">
+          <!--6 columns to hold the content-->
+          <!--contact form-->
+          <div id="contact-form">
+            <h3>Need help?</h3>
+            <p>
+              Fill in your details and we'll get back to you as soon as we can.
+            </p>
+            <form>
+              <!--contact form to add first name, last name email and submit button (button not working)-->
+              <label for="firstname">First name:</label><br />
+              <input type="text" id="firstname" name="firstname" /><br />
+
+              <label for="lastname">Last name:</label><br />
+              <input type="text" id="lastname" name="lastname" /><br />
+
+              <label for="email">E-mail address:</label><br />
+              <input type="text" id="email" name="email" /><br />
+
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message" rows="4"></textarea><br />
+
+              <!--radio buttons to opt into newsletter-->
+              <label class="radio-label"
+                >Can we use your email address to add you to our
+                newsletter?</label
+              >
+              <input
+                type="radio"
+                name="option"
+                value="yes"
+                id="option1"
+                class="radio-input"
+              />
+              <label for="option1">Yes</label>
+              <input
+                type="radio"
+                name="option"
+                value="no"
+                id="option2"
+                class="radio-input"
+              />
+              <label for="option2">No</label>
+
+              <div id="submit">
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer section with info-->
+    <footer>
+      <p>Ninewells, Dolphinton. Est. 2023</p>
+    </footer>
+    <script src="../JavaScript/activities.js"></script>
+  </body>
+</html>
